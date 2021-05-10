@@ -1,4 +1,4 @@
-/* Solution 1: ( TLE )
+/* Solution 1: ( Time limit exceeded on test 5 )
 We have: f(4) =  - 1 + 2 - 3 + 4 
      <=> f(4) =  - 1 - 3 + 2 + 4 
          f(5) =  - 1 + 2 - 3 + 4 - 5 
