@@ -22,7 +22,6 @@ int main()
             {
                 d++;
             }
-
         }
         if(kq>d)
         {
