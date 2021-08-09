@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-	long long n,kq=1e9,dem=0,luu;
+    long long n,kq=1e9,dem=0,luu;
     string s;
     cin>>n>>s;
     string led[6]={"GRB", "GBR", "RGB", "RBG", "BGR", "BRG"};
