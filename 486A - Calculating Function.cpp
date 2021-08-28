@@ -1,6 +1,7 @@
 //Editorial write by Le Minh Loc
 /* Solution 1: (Brute Force) Time limit exceeded on test 5
-We have: f(4) =  - 1 + 2 - 3 + 4 
+We can see: 
+         f(4) =  - 1 + 2 - 3 + 4 
      <=> f(4) =  - 1 - 3 + 2 + 4 
          f(5) =  - 1 + 2 - 3 + 4 - 5 
      <=> f(5) =  - 1 - 3 - 5 + 2 + 4 
