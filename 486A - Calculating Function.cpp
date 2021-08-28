@@ -1,4 +1,4 @@
-/* Solution 1: ( Time limit exceeded on test 5 )
+/* Solution 1: (Brute Force) Time limit exceeded on test 5
 We have: f(4) =  - 1 + 2 - 3 + 4 
      <=> f(4) =  - 1 - 3 + 2 + 4 
          f(5) =  - 1 + 2 - 3 + 4 - 5 
@@ -30,7 +30,7 @@ int  main()
     return 0;
 }
 
-/* Solution 2 ( Accept ) 
+/* Solution 2: (Math) Accept 
   If n is even, then the answer is n / 2, otherwise the answer is (n - 1) / 2 - n =  - (n + 1) / 2.
 */
 #include<bits/stdc++.h>
