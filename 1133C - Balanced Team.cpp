@@ -1,3 +1,4 @@
+//tu yeu linnk
 #include<bits/stdc++.h>
 using namespace std;
 
