@@ -1,4 +1,3 @@
-//tú yêu linnk
 #include<bits/stdc++.h>
 using namespace std;
 
