@@ -1,4 +1,4 @@
-//tú yêu linnk
+//linnk yêu tú
 #include<bits/stdc++.h>
 using namespace std;
 
