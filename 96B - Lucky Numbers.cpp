@@ -5,15 +5,15 @@ using namespace std;
 
 vector<long long>v;
 
-void dq(long long n,long long d4,long long d7)
+void dp(long long n,long long d4,long long d7)
 {
     if(n>=1e10) return;
     if(d4==d7&&n>1)
     {
         v.push_back(n);
     }
-    dq(n*10+4,d4+1,d7);
-    dq(n*10+7,d4,d7+1);
+    dp(n*10+4,d4+1,d7);
+    dp(n*10+7,d4,d7+1);
 }
 
 int binarySearch(long long n)
@@ -37,7 +37,7 @@ int binarySearch(long long n)
 
 signed main()
 {
-    dq(0,0,0);
+    dp(0,0,0);
     sort(v.begin(),v.end());
     int t=1;
     while(t--)
