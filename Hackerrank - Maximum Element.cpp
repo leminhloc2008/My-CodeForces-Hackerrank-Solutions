@@ -1,22 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int timMax(stack<long long>s)
-{
-    long long m=s.top();
-    long long n;
-    while (!s.empty())
-    {
-        n=s.top();
-        if(m<n) m=n;
-        s.pop();
-    }
-    return m;
-}
-
 int main()
 {
     stack<long long>s;
+    stack<long long>m;
+    m.push(0);
     long long q;
     cin>>q;
     while(q--)
@@ -26,15 +15,23 @@ int main()
         if(dk==1)
         {
             cin>>x;
+            if(x>=m.top())
+            {
+                m.push(x);
+            }
             s.push(x);
         }
         if(dk==2)
         {
-             s.pop();
+            if(s.top()==m.top())
+            {
+                m.pop();
+            }
+            s.pop();
         }
         if(dk==3)
         {
-            cout<<timMax(s)<<endl;
+            cout<<m.top()<<endl;
         }
     }
 }
