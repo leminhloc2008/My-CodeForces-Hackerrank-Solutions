@@ -1,0 +1,101 @@
+/*
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyysssssssssssssssssyhhhsssssssssssssssssssssssssssshhhhhhhyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyssssssyssssssssssssssssssssssssssssssssssssssssyhhhhhhhyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyysssssyyssssssssssssssssssssssssssssssssyyssssshhhhhhhyyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyysssssysssssssssssssssssssssssshdyssssyyyhssshhhhhhhhyyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyssssssssssssssssyyyhhyyyyssssshNNmdhhhhhhyhhhhhhhhyyyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyhhhhhhhyyyyyysssssyhddddddddddddhysssydNMMMNNNNmmmddddhyyyyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyhhdddddddddddddddddddhhdddddddddddddddmmNNNNNMMMMMMMMMMMMMMNNmdhhyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyhhdddddddddddddddddddddddddddmmdddddddmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMNNdhyyyyyyyyyyy
+yyyyyyyyyyyyyyyhdddhhyyssooooooooooossyyhddddddddmmmmNNMMMNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMNdyyyyyyyyy
+yyyyyyyyyyyyyhdhysoo+++++++++++++++++++++osyddddddmNMMNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMNhyyyyyyy
+yyyyyyyyyyyyhyoo++++++++++++++++++++++++++++oyddmNMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMMNdyyyyyy
+yyyyyyyyyyyyo++++++++++++++++++++oo+++++++++++odNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMdyyyyy
+yyyyyyyyyys+++++++++++++++++++oo+/oo++++++++++sNNNNNNNNNNNNNNNhmNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMhyyyy
+yyyyyyyyyy+++++++oo+++++oo+oo+::---oo+++++++++dNNNNNNNNNNNNNNs-/ymNNNNNNNNNNNNNNNNNNNNMMMMMMMMMNyyyy
+yyyyyyyyho+++++++os+/+++/::--------:oo+++++++sNNNNNNNNNNNNNd/----:+ydmNNNNNNNNNNNNNNNNNNMMMMMMMMmyyy
+yyyyyyyyy++++++++o+------------------+o++++++hNNNNNNNNNNNms----------:/ohmmdmNNNNNNNNNNNNMMMMMMMMhyy
+yyyyyyyho++++++++s-----:d:------------:+o++++dNNNNNNNNNNy:-----------+s---++:oNNNmNNNNNNNNMMMMMMMNyy
+yyyyyyyh++++++++s/::::-:s------------:--:+oo+mNNNNNNNNh/--/----------:o-------hNh:/smNNNNNNMMMMMMMdy
+yyyyyyyh+++s++++s-:///:-------------oh-----soNNNNNNNm/----m:------------------+m:---ymMNNNNNMMMMMMNy
+yyyyyyyho++y++++o---::-----:--------/:----:ssNNNNNMMd--------------+/---------:/--/ymMMNNNNNNMMMMMMm
+yyyyyyyyysyh++++s----------::///:---:///::s+dNNmNmNMM/--------:o/::/:-----------/yNMMNNNNNNNNNMMMMMM
+yyyyyyyyyyyh++++s:------------------:////s+oNmydddmMMd-------------------------:yNMMMNNNNNNNNNNMMMMM
+yyyyyyyyyyyho+++oy----------------------oo+yyohddddMMMy-----------------------:ymMMMNNNNNNNNNNNNMMMM
+yyyyyyyyyyyyysosyyy:-------------------oo+o+ohdddddMMMMd/--------------------/hNMMMNNNNNNNNNNNNNNMMM
+yyyyyyyyyyyyyyyyyyyyo-----------------oo+++ohdmmddmMMMMMMdo:----------------+mMMMNNNNNNNNNNNNNNNNNMM
+yyyyyyyyyyyyyyyyyyyyyy/-------------:+hoosyddmmmmddMMMMMMMMMmhs+:----------/dMMMMNNNNNNNNNNNNNNNNNNM
+yyyyyyyyyyyyyyyyyyyyyyyo----------/shhmdddddmdddddmMMMMMMMMMMMMMMNds-------smMMMMNNNNNNNNNNNNNNNNNNM
+yyyyyyyyyyyyyyyyyyyyyyyho-------:shhyyyhsoohddddddNMMMMMMMMMMMMMMMMMd------sdMMMMMNNNNNNNNNNNNNNNNNN
+yyyyyyyyyyyyyyyyyyyydmmmd------:ymmdhyyy++oddddddNMMMMMMMMMMMMMMMMMMMs-----/hNMMMMMMNNNNNNNNNNNNNNNN
+yyyyyyyyyyyyyyyyyyymmmNMy------ydMMMNmys+++hssddmMMMMMMMMMMMMMMMMMMMNm------ymNNMMMMMMNNNNNNNNNNNNNN
+yyyyyyyyyyyyyyyyyyhmmmmNs////+sdNNNMMMhy+++ss+hmMMMMMMMMMMMMMMMMMNmmdh---:ohdmddmNNMMMMMNNNNNNNNNNNN
+yyyyyyyyyyyyyyyhddmNmmmmmmmmmmmmmmmNMMdhysyyy+yNMMMMMMMMMMMMMMNmdhhdddsoshddhdhhhddmNMMMMMNNNNNNNNNN
+yyyyyyyyyyhhdmmmmmmNNmmmmmmmmmmmmmNMMMMNmhyyhodMMMMMMMMMMMMMNmdhhdh/+syhyso:-+hhhhhddmNMMMMNNNNNNNNN
+yyyyyyyhdmmmmmmmmmmmmmmmmmmmmmmNNNNNNNNMMNddddMMMMMMMMMMMMMmdhhhds-...---.....:ydhhhhddNNMMMNNNNNNNN
+yyyyhdmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmNNMNddNMNMMMMMMMMMNdhhhhds-.............-sdhhhhhdmNMMMMNNNNNN
+yhdmmmmmmmmmmmNNmmmmmmmmmmmmmmmmmmmmmmmmNMMddNMmMMMMMMMNmdhhhhhy-...-............odhhhhhdmNMMMNNNNNN
+mmmmdddhhmmmmNMMMMNNmmmmmmmmmmmmmmmmNmmmmNMmdmMmMMMMMNmdhhhhhdh+:+ooossso+/:......odhhhhhhmNMMMNNNNN
+mmd++ooooyyyyhhmMMMMNmmmmmmmmmmmmmmmNmmmmNMNddNdMMMMmdhhhhhhy+ssssssssyysdyy+......odhhhhhhmNNMMNNNN
+mds--::::::::-+hMMMMMNmmmmmmmmmmmmmNmmmmmNMNdddmmMNdhhhhhhhd+-::::::::::+dyyy///////dhhhhhhhmNMMMNNN
+///:::--------/hNmmdhddddmmmNNNmmmmNmmmmmNMmddddmddddhhhhddmo:------:::/+oysssssyyyymmhhhhhhdmNMMNNN
+/ddhsssso--:+oyddhhhyyssssyyhhddmNNNmmmmmMMmddmdmmmmmmmdddyso++----+///:///dhyssssssyddhhhhhhdNNMNNN
+dNms-///s:-oooossdNNNmdddddddhhhhhmNmmmmNMNddmdddddddmmy/--///s:---o///:-+/dysmdyssyyymdddddddmNMMNN
+/ddh///+o--+///::mmmmNNNNNNNNNNmmdmNmmmmNMdydddhhhhhdmds---/+//:---:o///+/yhsddmmmmmmmmmmNmmddhmNMMM
++:/---------::ossmmmmmmmmmmmmmmmNNNmmmmmMNsshhhhhhhhhddmdhsyh-----------/hhyhdmdhhhhhhhhhdddmmddNMMM
+ssy/:--------:yhsyyyhdmmmmmmmmmmmmmmmmmNNhsoydhhhhhhhhhdmhssss/::::::::/+ysssydhhhhhhhhhhhhhhhhhmNNM
+ssosssssooosssssssooooyhmmmmmmmmmmmmmmNNhsoosshhdhhhddhyssssoosssssssssssoooosdhhhhhhhhhhhhhhhhhmhhd
+oooooooooooosysoooooooososyyhhddmmmmdddyssssssssyyyyssoosssoooooooooooooooooooshdhhhhhhhhhhhhhdddhhh
+oooooooooosssooooooooooooooooosssyyssssooosooooooosssssyyssssssssssssoooooooosssyyhhddddddddddhhhhhh
+ooooooooosssooooooooooooooooosssssoooooooooooooooooosssssooooooooossssssooosssssoooooossyhhhhhhhhhhh
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    long long t;
+    cin>>t;
+    while(t--)
+    {
+        long long n,l,r,dem=0,left,right;
+        cin>>n>>l>>r;
+        long long a[n+1];
+        for(int i=1;i<=n;i++)
+        {
+            cin>>a[i];
+        }
+        sort(a+1,a+1+n);
+        left=1;
+        right=n;
+        while(left<right)
+        {
+            if(a[left]+a[right]<=r)
+            {
+                dem=dem+(right-left);
+                left++;
+            }
+            else
+            {
+                right--;
+            }
+        }
+        left=1;
+        right=n;
+        while(left<right)
+        {
+            if(a[left]+a[right]<l)
+            {
+                dem=dem-(right-left);
+                left++;
+            }
+            else
+            {
+                right--;
+            }
+        }
+        cout<<dem<<endl;
+    }
+    return 0;
+}
