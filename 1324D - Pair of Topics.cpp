@@ -3,50 +3,30 @@ using namespace std;
 
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    long long t;
-    cin>>t;
-    while(t--)
+    long long n,dem=0;
+    cin>>n;
+    long long a[n+1],b[n+1],c[n+1];
+    for(int i=1;i<=n;i++)
     {
-        long long n,l,r,dem=0,left,right;
-        cin>>n>>l>>r;
-        long long a[n+1];
-        for(int i=1;i<=n;i++)
-        {
-            cin>>a[i];
-        }
-        sort(a+1,a+1+n);
-        left=1;
-        right=n;
-        while(left<right)
-        {
-            if(a[left]+a[right]<=r)
-            {
-                dem=dem+(right-left);
-                left++;
-            }
-            else
-            {
-                right--;
-            }
-        }
-        left=1;
-        right=n;
-        while(left<right)
-        {
-            if(a[left]+a[right]<l)
-            {
-                dem=dem-(right-left);
-                left++;
-            }
-            else
-            {
-                right--;
-            }
-        }
-        cout<<dem<<endl;
+        cin>>a[i];
     }
-    return 0;
-} 
+    for(int i=1;i<=n;i++)
+    {
+        cin>>b[i];
+    }
+    for(int i=1;i<=n;i++)
+    {
+        c[i]=a[i]-b[i];
+    }
+    sort(c+1,c+1+n);
+    int i=1;
+    for(int j=n;j>=1;j--)
+    {
+        while(c[i]+c[j]<=0&&j>i)
+        {
+            i++;
+        }
+        if(c[i]+c[j]>0) dem+=j-i;
+    }
+    cout<<dem;
+}
