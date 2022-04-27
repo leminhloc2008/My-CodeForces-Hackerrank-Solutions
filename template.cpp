@@ -10,6 +10,7 @@ int ktNguyenTo(long long n)
 {
     long long i;
     if (n<2) return 0;
+	if (n==2) return 1;
     for (i=2;i<=sqrt(n);i++)
     {
         if(n%i==0) return 0;
@@ -120,6 +121,43 @@ int demChiaHet(long long a,long long b,long long m)
         return (b/m)-(a/m)+1;
     }
     return (b/m)-(a/m);
+}
+
+// sàng ước
+long long mod=1e6,d[int(1e6)+5];
+
+void preProcess()
+{
+    for(int i=1;i<=mod;i++)
+    {
+        d[i]=1;
+    }
+    for(int i=2;i<=mod;i++)
+    {
+        for(int j=i;j<=mod;j+=i)
+        {
+            d[j]+=i;
+        }
+    }
+}
+
+// tổng đoạn con lớn nhất
+int maxSubArray(long long n, long long a[])
+{
+    long long temp=0,tong=-1e9;
+    for(int i=1;i<=n;i++)
+    {
+        temp=temp+a[i];
+        if(tong<temp)
+        {
+            tong=temp;
+        }
+        if(temp<0)
+        {
+            temp=0;
+        }
+    }
+    return tong;
 }
 //end template
 
