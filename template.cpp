@@ -35,6 +35,31 @@ void sang()
         }
     }
 }
+//sang vector
+vector<long long>sangVector()
+{
+    vector<bool>isPrime(m+1, true);
+    isPrime[0]=isPrime[1]=false;
+    for (int i=2;i*i<=m;i++)
+    {   
+        if(isPrime[i])
+        {
+            for(int j=i*i;j<=m;j+=i)
+            {
+                isPrime[j]=false;
+            }
+        }
+    }
+    vector<long long>prime;
+    for (int i=2;i<=m;i++)
+    {
+        if (isPrime[i])
+        {
+            prime.push_back(i);
+        }
+    }
+    return prime;
+}
 //doi string sang so
 long long stringToInt(string s)
 {
@@ -123,6 +148,52 @@ long long kiemTraMilnerRabin(long long n, long long k=10)
         }
     }
     return true;
+}
+//dem uoc
+bool ktChinhPhuong(long long n)
+{
+    long long can=sqrt(n);
+    if(can*can==n)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+long long demUoc(long long n)
+{
+    vector<long long>prime=sangVector();
+    long long kq=1;
+    for(int i:prime)
+    {
+        if(i*i*i>n)
+        {
+            break;
+        }
+        long long dem=0;
+        while(n%i==0)
+        {
+            n=n/i;
+            dem++;
+        }
+        kq=kq*(dem+1);
+    }
+    if(kiemTraMilnerRabin(n))
+    {
+        kq*=2;
+    }
+    else if(ktChinhPhuong(n)&&kiemTraMilnerRabin(sqrt(n)))
+    {
+        kq*=3;
+    }
+    else if(n!=1)
+    {
+        kq*=4;
+    }
+    return kq;
 }
 // phan tich thua so nguyen to
 long long dem[2000005];
