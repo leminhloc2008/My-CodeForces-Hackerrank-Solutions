@@ -258,20 +258,23 @@ int demChiaHet(long long a,long long b,long long m)
     return (b/m)-(a/m);
 }
 
-// sàng ước
-long long mod=1e6,d[int(1e6)+5];
+// sang uoc, d=so luong uoc so, t=tong uoc so
+long long d[10000005],t[10000005];
 
-void preProcess()
+void sang()
 {
-    for(int i=1;i<=mod;i++)
+    long long n=1e6;
+    for(int i=1;i<=n;i++)
     {
         d[i]=1;
+        t[i]=1;
     }
-    for(int i=2;i<=mod;i++)
+    for(int i=2;i<=n;i++)
     {
-        for(int j=i;j<=mod;j+=i)
+        for(int j=i;j<=n;j+=i)
         {
-            d[j]+=i;
+            d[j]+=1;
+            t[j]+=i;
         }
     }
 }
